@@ -60,6 +60,9 @@ nav .logo {
     gap: 2em;
 }
 
+nav .active {
+    color: black;
+}
 
 /* ------------------main------------------------ */
 
@@ -190,14 +193,14 @@ a:hover {
 
 
 /* --------------------------------------------------------------------------------------- */
-@media (max-width: 1650px) {
+@media screen and (max-width: 1650px) {
     main article p {
         line-height: 20px;
     }
 }
 
 
-@media (max-width: 1250px) {
+@media screen and (max-width: 1250px) {
     .container {
         flex-direction: column;
     }
@@ -236,7 +239,7 @@ a:hover {
 }
 
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
     main article {
         flex-direction: column;
         align-items: center;
@@ -292,7 +295,7 @@ a:hover {
 
 
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
 
 
     main article h2 {
@@ -322,14 +325,14 @@ a:hover {
     }
 }
 
-@media (max-width: 555px) {
+@media screen and (max-width: 555px) {
     main article .article_h2 {
         display: block;
         text-align: center;
     }
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
     h1 {
         height: 5em;
         background-size: cover;
