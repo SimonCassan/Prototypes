@@ -16,8 +16,8 @@ body {
 
 body {
     font-family: Montserrat, sans-serif;
-    max-width: 1650px;
-    margin: auto;
+    /* max-width: 1650px; */
+    /* margin: auto; */
 }
 
 
@@ -144,8 +144,9 @@ h1 {
     color: white;
     text-align: center;
     background-image: url('../src/img/background.jpg');
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 10em;
     display: flex;
     font-weight: 900;
@@ -203,24 +204,6 @@ a:hover {
         flex-direction: column;
     }
 
-    main article {
-        gap: 1em;
-        flex-wrap: nowrap;
-    }
-
-    main article h2 {
-        font-size: 26px;
-        order: 1;
-    }
-
-    main article img {
-        order: 2;
-    }
-
-    main article .article_text {
-        order: 3;
-    }
-
     main article p,
     main article p:first-of-type {
         font-size: 14px;
@@ -259,13 +242,31 @@ a:hover {
     main article {
         flex-direction: column;
         align-items: center;
+        gap: 1em;
+        flex-wrap: nowrap;
+        width: auto;
+        max-height: inherit;
     }
 
-    main .article_h2 {
+    main article h2 {
+        font-size: 26px;
+        order: 1;
+    }
+
+    main article img {
+        order: 2;
+    }
+
+    main article .article_text {
+        order: 3;
+    }
+
+    main article .article_h2 {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
+        max-width: 100%;
     }
 
     nav {
@@ -298,7 +299,7 @@ a:hover {
     }
 
     main article img {
-        max-width: 90%;
+        max-width: 70%;
         max-height: 20%;
     }
 
