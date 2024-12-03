@@ -67,19 +67,20 @@ nav .logo {
 
 main {
     flex-direction: column;
-    gap: 60px;
+    gap: 4em;
     margin-top: 3em;
     margin-bottom: 3em;
 }
 
 main article {
-
     width: 70%;
     display: flex;
-    gap: 3em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5em;
     margin: auto;
     text-align: justify;
-    align-items: center;
+    max-height: 450px;
 }
 
 main article p {
@@ -93,11 +94,17 @@ main article .article_h2 p {
 }
 
 main article img {
-    max-height: 250px;
+    max-width: 35%;
+    height: 90%;
     flex-shrink: 0;
     object-fit: cover;
 }
 
+main article .article_text,
+main article .article_h2 {
+    max-width: 60%;
+    max-height: 45%;
+}
 
 /* ------------------footer------------------------ */
 
@@ -184,6 +191,11 @@ a:hover {
 
 
 /* --------------------------------------------------------------------------------------- */
+@media (max-width: 1650px) {
+    main article p {
+        line-height: 20px;
+    }
+}
 
 
 @media (max-width: 1250px) {
@@ -193,10 +205,20 @@ a:hover {
 
     main article {
         gap: 1em;
+        flex-wrap: nowrap;
     }
 
     main article h2 {
         font-size: 26px;
+        order: 1;
+    }
+
+    main article img {
+        order: 2;
+    }
+
+    main article .article_text {
+        order: 3;
     }
 
     main article p,
@@ -230,7 +252,6 @@ a:hover {
     footer h2 {
         margin-top: 0;
     }
-
 }
 
 
